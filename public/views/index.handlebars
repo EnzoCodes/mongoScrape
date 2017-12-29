@@ -1,0 +1,34 @@
+<!-- Main Bootstrap Search -->
+<div class="container">
+  <!-- Jumbotron for Title -->
+  <div class="jumbotron" style="background-color: #20315A ; color: white;">
+    <button type="submit" class="btn btn-md btn-default" id="home">Home</button>
+    <button type="submit" class="btn btn-md btn-success" id="saved">Saved</button>
+    <button type="button" class="btn btn-md btn-danger" id="run-scrape"><i></i> Scrape!</button>
+    <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i> Web Scraper!</strong></h1>
+    <!-- <button type="button" class="btn btn-md" id="clear-all"><i class="fa fa-trash"></i> Clear Results</button> -->
+  </div>
+<!-- PLACE THIS IN JUMBOTRON -->
+<ul>
+  {{#each article}}
+    {{#if saved}}
+      {{> articles/saved saved=true}}
+    {{/if}}
+  {{/each}}
+</ul>
+<!-- END JUMBOTRON -->
+
+
+<!-- Footer Region -->
+<div class="row">
+  <div class="col-sm-12">
+    <hr>
+    <h5 class="text-center"><small>Made by Enzo <i class="fa fa-heart"></i></small></h5>
+  </div>
+</div>
+
+</div>
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Code to the JavaScript File -->
+<!-- <script src="app.js"></script> -->

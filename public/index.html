@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Scraper!</title>
+  <!-- Bootswatch Styling for Improving the Aesthetics -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Style to fix the issue of text extending past panel length -->
+  <link rel="stylesheet" href="assets/style/styles.css">
+</head>
+
+  <body>
+    <!-- Main Bootstrap Search -->
+    <div class="container">
+      <!-- Jumbotron for Title -->
+      <div class="jumbotron" style="background-color: #20315A ; color: white;">
+        <button type="submit" class="btn btn-md btn-default" id="home">Home</button>
+        <button type="submit" class="btn btn-md btn-success" id="saved">Saved</button>
+        <button type="button" class="btn btn-md btn-danger" id="run-scrape"><i></i> Scrape!</button>
+        <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i> Web Scraper!</strong></h1>
+        <!-- <button type="button" class="btn btn-md" id="clear-all"><i class="fa fa-trash"></i> Clear Results</button> -->
+      </div>
+
+
+      <!-- This row will handle all of the retrieved articles -->
+      <div class="row">
+        <div class="col-sm-12">
+          <br>
+
+          <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
+          <div class="panel panel-primary">
+
+            <!-- Panel Heading for the retrieved articles box -->
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong><i class="fa fa-table"></i>   Top Articles</strong></h3>
+            </div>
+
+            <!-- This main panel will hold each of the resulting articles -->
+            <div class="panel-body" id="well-section">
+              <!-- ARTICLES GO HERE -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Region -->
+      <div class="row">
+        <div class="col-sm-12">
+
+          <!-- Line Break followed by closing -->
+          <hr>
+          <h5 class="text-center"><small>Made by Enzo <i class="fa fa-heart"></i></small></h5>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Code to the JavaScript File -->
+    <!-- <script src="app.js"></script> -->
+
+  </body>
+</html>
